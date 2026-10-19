@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4F6FA">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Calculadora de Notas"
+            android:textColor="#1F3B64"
+            android:textSize="26sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="20dp"
+            android:text="((Prova + Trabalho convertido) / 2 × 0,70) + (Formativa × 0,30)"
+            android:textColor="#5A6B85"
+            android:textSize="13sp" />
+
+        <TextView style="@android:style/TextAppearance.Material.Subhead"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Prova (0 a 10)" />
+
+        <EditText
+            android:id="@+id/editProva"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:digits="0123456789.,"
+            android:hint="ex.: 9,03"
+            android:inputType="numberDecimal" />
+
+        <TextView style="@android:style/TextAppearance.Material.Subhead"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Trabalho (0 a 4)" />
+
+        <EditText
+            android:id="@+id/editTrabalho"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:digits="0123456789.,"
+            android:hint="ex.: 3,93"
+            android:inputType="numberDecimal" />
+
+        <TextView style="@android:style/TextAppearance.Material.Subhead"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Avaliação Formativa (0 a 10)" />
+
+        <EditText
+            android:id="@+id/editFormativa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:digits="0123456789.,"
+            android:hint="ex.: 9,50"
+            android:inputType="numberDecimal" />
+
+        <Button
+            android:id="@+id/btnCalcular"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#1F3B64"
+            android:text="Calcular"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/txtConceito"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:gravity="center"
+            android:padding="16dp"
+            android:textColor="#000000"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/txtDetalhes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:textColor="#22304A"
+            android:textSize="15sp"
+            android:lineSpacingExtra="4dp" />
+    </LinearLayout>
+</ScrollView>
